@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>add recipe</title>
+</head>
+<body>
+<section>
+<nav>
+    <ul>
+        <li> <a href="index.html" >home</a></li>
+        <li><a href="add-recipe.html" >add recipe</a></li>
+        <li> <a href="recipe-list-html.html" >add recipe list</a></li>
+        <li> <a href="Recipe%20Details%20page.html" >Recipe Details page</a></li>
+    </ul>
+</nav>
+</section>
+
+<section>
+    <h2> Recipe Submission Form:</h2>
+    <form>
+        <label for="Recipe Name"> Recipe Name: </label><br>
+    <input type="text" id ="Recipe Name" name ="Recipe Name" ><br><br>
+
+        <label for="Ingredients">Ingredients:</label><br>
+        <textarea id ="Ingredients" name ="Ingredients" row="10" cols="100" placeholder="list the Ingredients here" ></textarea><br><br>
+
+        <label for="Istructions"> Cooking Instructions:</label><br>
+        <textarea id ="Istructions" name ="Istructions" row="10" cols="100" placeholder="Write the cooking steps here"></textarea><br><br>
+
+<label for="image-file">Image-URL:</label>
+        <input type="file" id ="image-file" name ="image-file" accept="image/*" placeholder=" Enter your Image-URL( optional)"><br><br>
+
+<label for="Recipe Category"> Recipe Category:</label><br>
+        <select id="Recipe Category" name ="Recipe Category" required><br>
+        <option value="" disabled selected> select a Category</option><br>
+        <option value="Desserts" > Desserts</option><br>
+        <option value="Appetizers" >Appetizers</option><br>
+        <option value="Vegan" > Vegan</option><br>
+        </select><br><br>
+        <button type="submit">Add Recipe</button>
+
+    </form>
+</section>
+</body>
+</html>
